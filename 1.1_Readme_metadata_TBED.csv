@@ -1,0 +1,29 @@
+"Readme ""metadata_TBED.csv""",
+,
+"This file summarizes tuberculosis (TB) related data and metadata used for every individual within the study. Metadata were collected from the Kalahari Meerkat Project Database, presence of TB signs was extracted from the HealthDiary within the Kalahari Meerkat Database. Individual IDs and group identities were anonymized, group IDs are corresponding to the ones used in the group_history_overview.",
+Data processing in R to extract summary data and generate the plots presented in the paper (Code available upon request).,
+Explanation of variables:,
+ID_TBED,"Individual identifier assigned for this study, anonymized from Meerkat Project animal ID information"
+Birth_Group_TBED,Birth group for the individual recorded by the Kalahari Meerkat Project
+First_Seen_Group_TBED,First group the individual was recorded in upon becoming a study individual or immigrating into the study population
+Final_Group_TBED,Final group the individual was recorded in
+Sex,"sex of the individual, U = unknown, F = female, M = male"
+BirthDate,Birthdate of the individual extracted from the Kalahari Meerkat Database
+immigration_date,first date the individual was recorded upon immigration into the study population (i.e. no birthdate available)
+First_date,Earliest date the individual was recorded on between Birthdate and immigration_date
+LastSeenDate,Last date the individual was recorded within the Kalahari Meerkat Project observations
+DeathDate,Death date recorded for the individual
+Final_date,Latest date between individual death date and last recorded date. 
+TB_death,TRUE if individual died with (or of) confirmed TB
+Final_age,"in days, Final_date - First_date"
+Final_age_years,final age / 365.25
+final_age_accurate,TRUE if individual birthdate recorded
+TB_final_status,"most severe status for the individual recorded (levels: unexposed = never cohabitating with individual with clear clinical TB, exposed_asymptomatic = cohabiting with clinically TB affected individual, but never exhibiting signs, exposed_signs: inhabiting group with clear TB signs and developing signs of TB)"
+TB_signs_date,first recorded date with clear signs of TB. For details on TB definition see publication
+TB_signs_group_TBED,Group the individual first progressed to clinical TB signs in
+TB_exposure_date,first date the individual was recorded cohabiting with an individual with clear clinical TB signs
+TB_exposed_group_TBED,Group the individual was first exposed to individuals with clinical TB signs
+TB_exposure_type,Nature of TB exposure. Levels: none: no exposure to TB; ResidentGroup: cohabiting with a group member developing clinical TB signs; Immigration: group change into a group already affected by TB; BirthGroup: Born into a group already affected by TB
+TB_date_Birthgroup,First date the individual's Birthgroup was recorded as TB affected
+TB_date_immigrated_group,First date the group an individual immigrated into was recorded as TB affected
+TB_date_Final_group,First date the individual's final group was recorded as TB affected

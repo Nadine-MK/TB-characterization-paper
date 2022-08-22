@@ -1,0 +1,15 @@
+"Readme ""Group_history_overview_TBED.csv""",
+,
+"This file summarizes the group histories with regard to tuberculosis (TB) signs, combining groups history data and individual TB status information extracted from the Kalahari Meerkat Project Database. For each group, the date of the first individual with TB signs observed was added to the group history data and these dates were used for  calculating group survival past TB, etc.. Note that group identities were anonymized. ",
+Explanation of variables:,
+Group_ID_TBED,"Group ID assigned to the group for the study (different from Kalahari Meerkat Project Database Group ID), matching group ID in metadata"
+FirstSeenDate,"First date the group was recorded, from Kalahari Meerkat Project Database"
+FinalDate,"Final date the group was recorded, from Kalahari Meerkat Project Database. For groups still persisting at the end of the study period, this was set to ""2021-01-31"""
+First_TB_signs_date,Date of first TB signs positive individual in the group
+TB_by_immigration,"TRUE if the first TB signs individual was an immigrant. For these cases, the date of immigration of the TB signs positive individual was used as First_TB_signs_date"
+Alive_at_study_end,TRUE if the group was still persisting at the end of the study period
+days_pre_exposure,time from group first record to first TB signs
+days_post_exposure,time from first TB record to group last record (i.e. group failure)
+Group_survival,time from first group record to last group record
+ever_exposed,TRUE if group ever hat TB history
+Lasting_group,TRUE if group survival was longer than 6 months
