@@ -27,3 +27,5 @@ TB_exposure_type,Nature of TB exposure. Levels: none: no exposure to TB; Residen
 TB_date_Birthgroup,First date the individual's Birthgroup was recorded as TB affected
 TB_date_immigrated_group,First date the group an individual immigrated into was recorded as TB affected
 TB_date_Final_group,First date the individual's final group was recorded as TB affected
+,
+"This file was used to generate Figure 2, Figure 3 and Supplementary Figure 2.",

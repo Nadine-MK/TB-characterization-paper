@@ -1,6 +1,7 @@
 "Readme ""TB_by_3_months_TBED.csv""",
 ,
-"Restructuring of the tuberculosis (TB) metadata to 3 months increments for year- and period-wise analyses. For each individual, the were included if they were alive during the respective 3 month period and their current TB status was extracted from the TB data recorded in the metadata. IDs and group IDs were anonymized corresponding to the metadata and group history data.",
+"Restructuring of the tuberculosis (TB) metadata to 3 months increments for year- and period-wise analyses. For each 3 months period, data were included on an individual meerkat level, i.e. data on each individual alive during the period were included if they were alive during the respective 3 month period. For each ID and period, the current TB status was extracted from the TB data recorded in the metadata. IDs and group IDs were anonymized corresponding to the metadata and group history data.",
+,
 Explanation of variables:,
 ID_TBED,"Individual identifier assigned for this study, anonymized from Meerkat Project animal ID information"
 First_date,Earliest date the individual was recorded on between Birthdate and immigration_date (from metadata)
@@ -18,4 +19,5 @@ TB_signs_in_period,TRUE if the individal was recorded as showing signs of TB for
 TB_death_in_period,TRUE if the individal was recorded as having died with confirmed TB on any day period
 Group_TBED,Group the individual was observed most often within the 3 months period (from individual sightings in the Kalahari Meerkat Database)
 current_status,"most severe status for the individual recorded in this period (levels: unexposed = never cohabitating with individual with clear clinical TB, exposed = cohabiting with clinically TB affected individual, but not exhibiting signs, TB_signs: individual showing signs of TB, euthanized: Individual confirmed to have died of TB in this period)"
-ID_TBED,
+,
+This data was used to generate Figure 1 and Supplementary Figure 1,
